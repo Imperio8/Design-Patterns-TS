@@ -1,3 +1,28 @@
+/**
+ * Example usage of the Prototype Pattern.
+ * 
+ * The Prototype Pattern is a creational design pattern that lets you create new objects
+ * by cloning an existing object, known as the prototype, instead of creating new instances
+ * from scratch.
+ * 
+ * Key benefits:
+ * - Reduces the need for subclassing
+ * - Hides the complexity of creating new instances
+ * - Provides an alternative to inheritance
+ * - Reduces initialization overhead
+ * 
+ * Common use cases:
+ * - When a system should be independent of how its products are created
+ * - When the classes to instantiate are specified at run-time
+ * - When you want to avoid building a class hierarchy of factories
+ * - When instances of a class can have only a few different combinations of state
+ * 
+ * In this example, we demonstrate:
+ * - A Document class that implements the prototype pattern
+ * - The ability to create new documents by cloning existing ones
+ * - Deep copying of object properties
+ * - Maintaining independence between original and cloned objects
+ */
 import { Document } from "./Document";
 
 /**

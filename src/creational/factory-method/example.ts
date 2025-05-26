@@ -1,3 +1,26 @@
+/**
+ * Example usage of the Factory Method Pattern.
+ * 
+ * The Factory Method Pattern is a creational design pattern that provides an interface
+ * for creating objects but lets subclasses decide which class to instantiate.
+ * 
+ * Key benefits:
+ * - Encapsulates object creation logic
+ * - Provides flexibility in creating different types of objects
+ * - Follows the Open/Closed Principle
+ * - Makes code more maintainable and testable
+ * 
+ * Common use cases:
+ * - When a class can't anticipate the class of objects it must create
+ * - When a class wants its subclasses to specify the objects it creates
+ * - When you want to localize the knowledge of which class gets created
+ * 
+ * In this example, we demonstrate:
+ * - A VehicleFactory interface that defines the factory method
+ * - Concrete factories (CarFactory, TruckFactory, MotorcycleFactory) that create specific vehicles
+ * - Each factory creates its own type of vehicle with specific attributes
+ * - The client code works with the abstract Vehicle interface
+ */
 import { CarFactory } from "./CarFactory";
 import { TruckFactory } from "./TruckFactory";
 import { MotorcycleFactory } from "./MotorcycleFactory";

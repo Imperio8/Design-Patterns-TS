@@ -1,3 +1,27 @@
+/**
+ * Example usage of the Singleton Pattern.
+ * 
+ * The Singleton Pattern is a creational design pattern that ensures a class has only one instance
+ * and provides a global point of access to it.
+ * 
+ * Key benefits:
+ * - Guarantees that a class has only one instance
+ * - Provides a global access point to that instance
+ * - Controls access to shared resources
+ * - Useful for managing global state or configuration
+ * 
+ * Common use cases:
+ * - Configuration management
+ * - Database connections
+ * - Logging
+ * - Caching
+ * - Thread pools
+ * 
+ * In this example, we demonstrate a ConfigurationManager that:
+ * - Maintains a single instance of application settings
+ * - Provides global access to configuration values
+ * - Ensures all parts of the application use the same configuration
+ */
 import { ConfigurationManager } from "./Singleton";
 
 /**
